@@ -37,12 +37,17 @@
   <div class="row">
     <mat-form-field>
       <mat-label>Education</mat-label>
-      <mat-select>
+      <!-- <mat-select>
         <mat-option value="1">Matric</mat-option>
         <mat-option value="2">Diploma</mat-option>
         <mat-option value="3">Intermediate</mat-option>
         <mat-option value="4">Graduate</mat-option>
         <mat-option value="4">Post Graduate</mat-option>
+      </mat-select> -->
+      <mat-select>
+        <mat-option *ngFor="let cert of certificate" [value]="cert.value">{{
+          cert.viewValue
+        }}</mat-option>
       </mat-select>
     </mat-form-field>
     <mat-form-field appearance="outline">

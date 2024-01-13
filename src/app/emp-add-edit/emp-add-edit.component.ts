@@ -6,9 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./emp-add-edit.component.scss'],
 })
 export class EmpAddEditComponent {
-  foods: any[] = [
-    { value: 'steak-0', viewValue: 'Steak' },
-    { value: 'pizza-1', viewValue: 'Pizza' },
-    { value: 'tacos-2', viewValue: 'Tacos' },
+  certificate: any[] = [
+    { value: 'matric-0', viewValue: 'Matric' },
+    { value: 'diploma-1', viewValue: 'Diploma' },
+    { value: 'intermediate-2', viewValue: 'Intermediate' },
+    { value: 'graduate-3', viewValue: 'Graduate' },
+    { value: 'postGraduate-4', viewValue: 'PostGraduate' },
   ];
 }

@@ -8,3 +8,10 @@
 h1 {
     font-weight: 700;
 }
+div[mat-dialog-actions] {
+    display: flex;
+    justify-content: space-between;
+}
+div[mat-dialog-actions] button {
+    flex: 1;
+}
