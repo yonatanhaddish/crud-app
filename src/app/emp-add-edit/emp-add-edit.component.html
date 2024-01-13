@@ -7,7 +7,58 @@
     </mat-form-field>
     <mat-form-field appearance="outline">
       <mat-label>Last Name</mat-label>
-      <input matInput />
+      <input matInput type="text" />
+    </mat-form-field>
+  </div>
+  <div class="row">
+    <mat-form-field appearance="outline">
+      <mat-label>Email</mat-label>
+      <input matInput type="email" />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Choose a date</mat-label>
+      <input matInput [matDatepicker]="picker" />
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle
+        matIconSuffix
+        [for]="picker"
+      ></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+  </div>
+  <div class="row">
+    <mat-radio-group aria-label="Select an option" color="primary">
+      Gender
+      <mat-radio-button value="1">Male</mat-radio-button>
+      <mat-radio-button value="2">Female</mat-radio-button>
+      <mat-radio-button value="2">Others</mat-radio-button>
+    </mat-radio-group>
+  </div>
+  <div class="row">
+    <mat-form-field>
+      <mat-label>Education</mat-label>
+      <mat-select>
+        <mat-option value="1">Matric</mat-option>
+        <mat-option value="2">Diploma</mat-option>
+        <mat-option value="3">Intermediate</mat-option>
+        <mat-option value="4">Graduate</mat-option>
+        <mat-option value="4">Post Graduate</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Company</mat-label>
+      <input matInput type="text" />
+    </mat-form-field>
+  </div>
+  <div class="row">
+    <mat-form-field appearance="outline">
+      <mat-label>Experience</mat-label>
+      <input matInput type="number" />
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Package</mat-label>
+      <input matInput type="number" />
+      <mat-hint>In Dollars</mat-hint>
     </mat-form-field>
   </div>
 </div>
