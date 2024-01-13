@@ -10,9 +10,9 @@ import { EmpAddEditComponent } from './emp-add-edit/emp-add-edit.component';
 export class AppComponent {
   title = 'crud-app';
 
-  constructor(private dialog: MatDialog) {}
+  constructor(private _dialog: MatDialog) {}
 
   openAddEditEmpForm() {
-    this.dialog.open(EmpAddEditComponent);
+    this._dialog.open(EmpAddEditComponent);
   }
 }
