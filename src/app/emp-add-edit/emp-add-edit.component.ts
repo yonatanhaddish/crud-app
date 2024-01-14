@@ -24,10 +24,10 @@ export class EmpAddEditComponent {
       emailAddress: [''],
       dateDate: [null],
       gender: [''],
-      // education: ['', Validators.required],
-      // company: ['', Validators.required],
-      // experience: ['', Validators.required],
-      // package: ['', Validators.required],
+      education: [''],
+      company: [''],
+      experience: [''],
+      package: [''],
     });
   }
 
