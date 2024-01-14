@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-emp-add-edit',
@@ -6,6 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./emp-add-edit.component.scss'],
 })
 export class EmpAddEditComponent {
+  empForm!: FormGroup;
+
   certificate: any[] = [
     { value: 'matric-0', viewValue: 'Matric' },
     { value: 'diploma-1', viewValue: 'Diploma' },
@@ -13,4 +16,22 @@ export class EmpAddEditComponent {
     { value: 'graduate-3', viewValue: 'Graduate' },
     { value: 'postGraduate-4', viewValue: 'PostGraduate' },
   ];
+
+  constructor(private fb: FormBuilder) {
+    this.empForm = this.fb.group({
+      firstName: ['', Validators.required],
+      lastName: ['', Validators.required],
+      emailAddress: [''],
+      dateDate: [null],
+      gender: [''],
+      // education: ['', Validators.required],
+      // company: ['', Validators.required],
+      // experience: ['', Validators.required],
+      // package: ['', Validators.required],
+    });
+  }
+
+  onFormSumbit() {
+    console.log(this.empForm);
+  }
 }

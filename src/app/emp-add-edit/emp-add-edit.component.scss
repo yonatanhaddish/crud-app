@@ -4,6 +4,10 @@
 .row {
     display: flex;
     gap: 10px;
+
+    mat-form-field {
+        width: 100%;
+    }
 }
 h1 {
     font-weight: 700;
@@ -11,6 +15,7 @@ h1 {
 div[mat-dialog-actions] {
     display: flex;
     justify-content: space-between;
+    padding: 0 25px 20px;
 }
 div[mat-dialog-actions] button {
     flex: 1;
