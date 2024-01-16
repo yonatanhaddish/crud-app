@@ -1,0 +1,30 @@
+{
+  "posts": [],
+  "comments": [],
+  "profile": [],
+  "employees": [
+    {
+      "firstName": "Brinn",
+      "lastName": "Jephcote",
+      "email": "bjephcote0@archive.org",
+      "dateDate": "1981-10-05T12:09:39Z",
+      "gender": "Female",
+      "education": "Graduate",
+      "company": "Gabspot",
+      "experience": 36,
+      "package": 37
+    },
+    {
+      "id": "bc77",
+      "firstName": "fName",
+      "lastName": "lName",
+      "emailAddress": "email@email.com",
+      "dateDate": "2024-01-25T05:00:00.000Z",
+      "gender": "male",
+      "education": "Diploma",
+      "company": "Company002",
+      "experience": 3,
+      "package": 233
+    }
+  ]
+}
