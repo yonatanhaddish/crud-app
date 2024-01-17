@@ -39,18 +39,6 @@ export class EmpAddEditComponent {
     });
   }
 
-  onFormSumbitTest() {
-    console.log(this.empForm.value);
-    // console.log(this.employeeService.addEmployee(this.empForm.value));
-    this._employeeService.addEmployee(this.empForm.value).subscribe(
-      (response) => {
-        console.log(response);
-      },
-      (error) => {
-        console.log(error);
-      }
-    );
-  }
   onFormSumbit() {
     if (this.empForm.valid) {
       this._employeeService.addEmployee(this.empForm.value).subscribe({
